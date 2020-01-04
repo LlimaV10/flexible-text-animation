@@ -1,0 +1,81 @@
+@keyframes letter-animation1 {
+	from {
+		opacity: 0;
+		transform: translate(-20px, -20px) scaleX(.1) skew(-10deg, 60000deg) rotate(-55deg);
+	}
+	90% {
+		opacity: 0.5;
+	}
+	to {
+		opacity: 1;
+		transform: none;
+	}
+}
+.flexible-animation-1 > .flexible-letter{
+	animation-name: letter-animation1;
+}
+
+@keyframes letter-animation2 {
+	from {
+		opacity: 0;
+		transform: translate(-20px, -20px) scaleX(.1) skew(19000deg, -9000deg) rotate(-55deg);
+	}
+	80% {
+		opacity: 0.1;
+	}
+	to {
+		opacity: 1;
+		transform: none;
+	}
+}
+.flexible-animation-2 > .flexible-letter{
+	animation-name: letter-animation2;
+}
+
+@keyframes letter-animation3 {
+	from {
+		opacity: 0;
+		transform: translate(-20px, -20px) scaleX(.4) skew(-90deg, -90deg) rotate(-55deg);
+	}
+	40% {
+		transform: translate(0, 0) scaleX(.2) skew(-50deg, -50deg);
+	}
+	70% {
+		transform: translate(0, 0) scaleX(.6) skew(80deg, 80deg);
+	}
+	to {
+		opacity: 1;
+		transform: none;
+	}
+}
+.flexible-animation-3 > .flexible-letter{
+	animation-name: letter-animation3;
+}
+
+@keyframes letter-animation4 {
+	from {
+		opacity: 0;
+		transform: translate(-20px, -20px) scaleX(2.5) skew(-80deg, -80deg) rotate(-95deg);
+	}
+	to {
+		opacity: 1;
+		transform: none;
+	}
+}
+.flexible-animation-4 > .flexible-letter{
+	animation-name: letter-animation4;
+}
+
+.flexible-letter {
+	display: inline-block;
+	opacity: 0;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	animation-play-state: paused;
+}
+
+.flexible-text {
+	overflow: hidden;
+	opacity: 0;
+}
+
